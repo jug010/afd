@@ -24,4 +24,9 @@
     <welcome-file-list>
         <welcome-file>redirect.jsp</welcome-file>
     </welcome-file-list>
+    <!--Adding the following to allow the main index page to use html instead of JSP
+    Found trick here: http://stackoverflow.com/questions/9256122/running-jsp-as-html-file --> 
+    <!--<servlet-mapping> <servlet-name>jsp</servlet-name>
+         <url-pattern>*.html</url-pattern>
+    </servlet-mapping>-->
 </web-app>

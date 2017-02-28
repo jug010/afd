@@ -1,4 +1,5 @@
-<!DOCTYPE HTML>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <!--
 	Strata by HTML5 UP
 	html5up.net | @ajlkn
@@ -7,7 +8,7 @@
 -->
 <html>
 	<head>
-		<title>Strata by HTML5 UP</title>
+		<title>Advanced Floor Design</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -41,7 +42,7 @@
 					  <li><a href="#featuredwork">Featured Work</a></li>
 					  <li><a href="#contact">Contact</a></li>
 					  <li><a href="#about">About</a></li>
-                                          <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="navFunction()">☰</a>
+                                          <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="navFunction()">â°</a>
 					  </li>
 					</ul>
 			
@@ -115,17 +116,18 @@
 						<p>If you have any questions about our services or to request a complimentary estimate:</p>
 						<div class="row">
 							<div class="8u 12u$(small)">
-								<form method="post" action="#">
+								<form method="post" action="MailDispatcherServlet">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                                                                <div class="6u$ 12u$(xsmall)"><input type="phone" name="phone" id="email" placeholder="Phone" /></div>
+                                                                                <div class="6u$ 12u$(xsmall)"><input type="phone" name="phone" id="phone" placeholder="Phone" /></div>
 										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
-								</form>
-								<ul class="actions">
+                                                                <ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
+								</form>
+								
 							</div>
 							<div class="4u$ 12u$(small)">
 								<ul class="labeled-icons">
