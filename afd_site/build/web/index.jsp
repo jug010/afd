@@ -124,7 +124,7 @@
 										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
                                                                 <ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li style="padding-top:1em; margin-left:-1.2em"><input type="submit" value="Send Message" /></li>
 								</ul>
 								</form>
 								
