@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/Users/ryanrush/Google%20Drive/Projects/afd_2017/afd_site/web/assets/css/main.css</file>
+            <file>file:/Users/ryanrush/Google%20Drive/Projects/afd_2017/afd_site/web/assets/js/main.js</file>
             <file>file:/Users/ryanrush/Google%20Drive/Projects/afd_2017/afd_site/src/java/com/afd/mail/servlet/MailDispatcherServlet.java</file>
-            <file>file:/Users/ryanrush/Google%20Drive/Projects/afd_2017/afd_site/web/index.html</file>
-            <file>file:/Users/ryanrush/Google%20Drive/Projects/afd_2017/afd_site/nbproject/build-impl.xml</file>
             <file>file:/Users/ryanrush/Google%20Drive/Projects/afd_2017/afd_site/src/java/com/afd/mail/ejb/MailSenderBean.java</file>
+            <file>file:/Users/ryanrush/Google%20Drive/Projects/afd_2017/afd_site/web/index.jsp</file>
         </group>
     </open-files>
 </project-private>

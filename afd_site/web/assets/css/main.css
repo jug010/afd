@@ -2040,9 +2040,19 @@
 			}
 
 			/*Used to give the gallery overlay in the header section new content when hovered over */
+			
+			#header .image.thumb {
+
+				display: block;
+			    left: 0; top: 0; bottom:-40px; right:0;
+			    position: absolute;
+			    text-indent:-9999px;
+			}
+
 			#header .image.thumb:after {
 
 				content: 'View Gallery';
+
 			}
 
 			.image.thumb:hover:after {
@@ -2509,12 +2519,7 @@
 	    background-image: url(...);
 	}
 
-	#invisibleLink {
-	    display: block;
-	    left: 0; top: 0; bottom:-40px; right:0;
-	    position: absolute;
-	    text-indent:-9999px;
-	}
+
 
 	#header {
 		display: -moz-flex;

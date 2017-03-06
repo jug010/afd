@@ -19,8 +19,10 @@
 
 		<!-- Header -->
 			<header id="header">
-			   <a href="images/fulls/03.jpg" id="invisibleLink" class="image fit thumb">abc</a>
-			   
+				<div class="galleryImage">
+			   <a href="images/fulls/03.jpg" class="image fit thumb">abc</a>
+			   <h3>The Seattle Times - "Mountain Getaway Home"</h3>
+			   </div>
 
 				<!--
 				<div class="inner">
@@ -42,7 +44,7 @@
 					  <li><a href="#featuredwork">Featured Work</a></li>
 					  <li><a href="#contact">Contact</a></li>
 					  <li><a href="#about">About</a></li>
-                                          <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="navFunction()">â°</a>
+                                          <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="navFunction()">☰</a>
 					  </li>
 					</ul>
 			
