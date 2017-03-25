@@ -2039,21 +2039,12 @@
 				white-space: nowrap;
 			}
 
-			/*Used to give the gallery overlay in the header section new content when hovered over */
-			
-			#header .image.thumb {
-
-				display: block;
-			    left: 0; top: 0; bottom:-40px; right:0;
-			    position: absolute;
-			    text-indent:-9999px;
-			}
-
-			#header .image.thumb:after {
+			/*Used to give the gallery overlay in the header section new content when hovered over 
+			COMMETING THIS OUT BECAUSE I DON'T WANT THE SIDE PANEL TO OPEN IN A MODEL*/
+			/*#header .image.thumb:after {
 
 				content: 'View Gallery';
-
-			}
+			} */
 
 			.image.thumb:hover:after {
 				opacity: 1.0;
@@ -2134,7 +2125,6 @@
 	#main ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
 	}
 
 		#main ul li {
@@ -2178,22 +2168,19 @@
 				ul.icons li .icon:before {
 					font-size: 1.5em;
 				}
-                
 
 		ul.actions {
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
 		}
-                
 
 			ul.actions li {
 				display: inline-block;
 				padding: 0 1em 0 0;
 				vertical-align: middle;
 			}
-                        
-                        
+
 				ul.actions li:last-child {
 					padding-right: 0;
 				}
@@ -2519,7 +2506,13 @@
 	    background-image: url(...);
 	}
 
-
+	/*Not in use anymore because I don't want the side panel to open in a modal */
+	#invisibleLink {
+	    display: block;
+	    left: 0; top: 0; bottom:-40px; right:0;
+	    position: absolute;
+	    text-indent:-9999px;
+	}
 
 	#header {
 		display: -moz-flex;
@@ -2597,6 +2590,11 @@
 
 /* Footer */
 
+	#footer {
+		position:absolute;
+		bottom:10px;
+		left:10px;
+	}
 	#footer .icons {
 		margin: 1em 0 0 0;
 	}
@@ -3035,7 +3033,7 @@
 			#footer .copyright li {
 				border-left-width: 0;
 				display: block;
-				line-height: 2.25em;
+				line-height: 1.5em;
 				margin-left: 0;
 				padding-left: 0;
 			}
@@ -3322,7 +3320,7 @@
 					}
 
 						ul.actions li > *.icon:before {
-							margin-left: -2em;
+							margin-left: -0m;
 						}
 
 				ul.actions.small li {

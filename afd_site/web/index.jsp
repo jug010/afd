@@ -19,10 +19,10 @@
 
 		<!-- Header -->
 			<header id="header">
-				<div class="galleryImage">
+                            <!--<div class="galleryImage">
 			   <a href="images/fulls/03.jpg" class="image fit thumb">abc</a>
-			   <h3>The Seattle Times - "Mountain Getaway Home"</h3>
-			   </div>
+			   
+			   </div>-->
 
 				<!--
 				<div class="inner">
@@ -66,48 +66,59 @@
 
 						<p>Advanced Floor Design is licensed, bonded and insured. Our craftsmen are employees (not subcontractors) personally trained to insure the same quality workmanship on all jobs.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="#contact" class="button">Get a Free Quote</a></li>
 						</ul>
 					</section>
 
 				<!-- Two -->
-					<section id="two">
+					<section id="featured">
 						<a name="featuredwork"></a>
 						<h2>Featured Work</h2>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<a target="_blank" href="http://issuu.com/newbeauty-16/docs/pnw_lx11_issuu/201" class="image fit thumb"><img src="images/featured_articles/art_form.jpg" alt="" /></a>
 								<h3>Luxe - "Art Form"</h3>
 								<p>Custom stained oak floors are the perfect background in art lover's Vashon home</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>The Seattle Times - "Mountain Getaway Home"</h3>
+								<a target="_blank" href="http://www.seattletimes.com/pacific-nw-magazine/decks-views-and-a-pool-make-this-home-a-beachside-beauty/" class="image fit thumb"><img src="images/featured_articles/beachside_beauty.jpg" alt="" /></a>
+								<h3>The Seattle Times - "Beachside Beauty"</h3>
+								<p>A Craftsman, Japanese, Northwest feel in a Magnolia waterfront house</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a target="_blank" href="http://www.seattletimes.com/pacific-nw-magazine/mountain-getaway-home-is-elegantly-rustic-and-just-right/" class="image fit thumb"><img src="images/featured_articles/mountain_getaway.jpg" alt="" /></a>
+								<h3>The Seattle Times - "Mountain Getaway Home</h3>
 								<p>Elegantly rustic and just right</p>
 							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<a target="_blank" href="http://www.seattletimes.com/pacific-nw-magazine/contemporary-home-serves-its-corporate-vagabond-family/" class="image fit thumb"><img src="images/featured_articles/mercer_island_contemporary.jpg" alt="" /></a>
+								<h3>The Seattle Times - "Mercer Island contemporary"</h3>
+								<p>Mercer Island contemporary home serves its corporate-vagabond family</p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<a target="_blank" href="docs/publications/2011-09-27 Cirillo (Seattle Mag).pdf" class="image fit thumb"><img src="images/featured_articles/her_haven.jpg" alt="" /></a>
+								<h3>Seattle Magazine - "Her Haven, A Medina Home Splashed in Color"</h3>
+								<p>Elegant dark oak installed throughout the Cirillo family's 6,500-square-feet traditional home</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<a target="_blank" href="http://issuu.com/newbeauty-16/docs/pnw_lx11_issuu/189" class="image fit thumb"><img src="images/featured_articles/relaxation_mode.jpg" alt="" /></a>
+								<h3>Luxe Magazine - "Relaxation Mode"</h3>
+								<p>Elegant neutral traditional interiors with rich wide plank red oak floors</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a target="_blank" href="docs/publications/2011-07-01 Phinney Ridge (NW Home).pdf" class="image fit thumb"><img src="images/featured_articles/cottage_cute.jpg" alt="" /></a>
+								<h3>Northwest Home - "Cottage Cute, A Phinney Ridge Dream House"</h3>
+								<p>Walnut floors add new beauty to a cozy cottage in Seattle's Phinney Ridge</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a target="_blank" href="docs/publications/2011-10-01 Croco Residence (Luxe).pdf" class="image fit thumb"><img src="images/featured_articles/glowing_adaptation.jpg" alt="" /></a>
+								<h3>Luxe Magazine - "Glowing Adaptation"</h3>
+								<p>Modern Seattle Home with pale-toned oak flooring</p>
 							</article>
 						</div>
 						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
+							<!-- TASK: NEED TO FIND A WAY TO ONLY SHOW 4 FEATURES AND HIDE THE REST UNTIL USER CLICKS BUTTON -->
+							<li><a href="#" class="button">View More</a></li>
 						</ul>
 					</section>
 
@@ -479,14 +490,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
+					<!--
 					<ul class="icons">
 						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
 						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 					</ul>
+				-->
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Advanced Floor Design, inc.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>

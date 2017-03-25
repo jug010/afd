@@ -124,7 +124,7 @@ function navFunction() {
 							$header.css('background-position', 'left 0px');
 
 							$window.on('scroll.strata_parallax', function() {
-								$header.css('background-position', 'left ' + (-0.25 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+								$header.css('background-position', 'left ' + (-0.75 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
 							});
 
 							
@@ -143,13 +143,14 @@ function navFunction() {
 			// Lightbox gallery.
 				$window.on('load', function() {
 
-					$('#header').poptrox({
+					//I changed the featured section id from "two" to "featured" so this poptrox functionality stopped working
+					$('#two').poptrox({
 						caption: function($a) { return $a.next('h3').text(); },
 						overlayColor: '#2c2c2c',
 						overlayOpacity: 0.85,
 						popupCloserText: '',
 						popupLoaderText: '',
-						selector: '.galleryImage a.image',
+						selector: '.work-item a.image',
 						usePopupCaption: true,
 						usePopupDefaultStyling: false,
 						usePopupEasyClose: false,
