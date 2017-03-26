@@ -13,7 +13,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/ninja-slider.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 	<body id="top">
 
@@ -41,9 +43,12 @@
 				<a name="top"></a>
 					<ul class="topnav" id="myTopnav">
 					  <li><a class="active" href="#top">Home</a></li>
-					  <li><a href="#featuredwork">Featured Work</a></li>
-					  <li><a href="#contact">Contact</a></li>
+					  <li><a href="#gallery">Gallery</a></li>
 					  <li><a href="#about">About</a></li>
+					  <li><a href="#featuredwork">Featured Work</a></li>
+					  <li><a href="#services">Services</a></li>
+					  <li><a href="#contact">Contact</a></li>
+					  
                                           <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="navFunction()">☰</a>
 					  </li>
 					</ul>
@@ -70,7 +75,56 @@
 						</ul>
 					</section>
 
-				<!-- Two -->
+
+					<section>
+						<a name="gallery"></a>
+						<header class="major">
+							<h2>Gallery</h2>
+						</header>
+						    <div id="ninja-slider">
+						        <div class="slider-inner">
+						            <ul>
+						                <li>
+						                    <a class="ns-img" href="images/gallery/gallery-img1.jpg"></a>
+						                    <!--<div class="caption">@colerise</div>-->
+						                </li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img2.jpg"></a></li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img3.jpg"></a></li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img4.jpg"></a></li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img5.jpg"></a></li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img6.jpg"></a></li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img7.jpg"></a></li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img8.jpg"></a></li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img9.jpg"></a></li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img10.jpg"></a></li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img11.jpg"></a></li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img13.jpg"></a></li>
+						                <li><a class="ns-img" href="images/gallery/gallery-img14.jpg"></a></li>
+						                <!--
+						                <li>
+						                    <a class="ns-img" href="img/d.jpg"></a>
+						                    <div class="caption cap1">RESPONSIVE</div>
+						                    <div class="caption cap1 cap2">TOUCH·FRIENDLY</div>
+						                    <div class="caption">@colerise</div>
+						                </li>
+						            -->
+						            </ul>
+						            <div class="fs-icon" title="Expand/Close"></div>
+						        </div>
+    						</div>
+					</section>
+
+					<section>
+						<a name="about"></a>
+						<h2>Our Mission</h2>
+						<p>We are a family-owned business that delivers the highest-quality wood flooring services in the Seattle area. We are members of both the National Wood Flooring Association and the Master Builders Association. Our business is based on our reputation and referrals from previous clients. </p>
+
+						<p>Our reputation for quality has been achieved through building a team of well trained craftsmen and providing them with quality equipment and excellent products. We use the highest quality Swedish and Waterborne finishes available and other finishes such as oils and waxes. The craftsmen that will be working on your project are all employees of Advanced Floor Design; we do not use subcontractors. Our personally trained crew ensures the same quality workmanship on all projects. </p>
+
+						<p>Advanced Floor Design is Licensed, Bonded, and Insured. We look forward to working with you to provide a quality floor that will add beauty and value to your home.</p>
+
+					</section>
+
 					<section id="featured">
 						<a name="featuredwork"></a>
 						<h2>Featured Work</h2>
@@ -95,6 +149,19 @@
 								<h3>The Seattle Times - "Mercer Island contemporary"</h3>
 								<p>Mercer Island contemporary home serves its corporate-vagabond family</p>
 							</article>
+						</div>
+
+						<!-- TOGGLE FUNCTIONALITY FROM https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_toggle -->
+						<script> 
+							$(document).ready(function(){
+							    $("#flip").click(function(){
+							        $("#panel").slideToggle("slow");
+							    });
+							});
+						</script>
+
+						<div class="row" id="panel">
+
 							<article class="6u 12u$(xsmall) work-item">
 								<a target="_blank" href="docs/publications/2011-09-27 Cirillo (Seattle Mag).pdf" class="image fit thumb"><img src="images/featured_articles/her_haven.jpg" alt="" /></a>
 								<h3>Seattle Magazine - "Her Haven, A Medina Home Splashed in Color"</h3>
@@ -105,7 +172,7 @@
 								<h3>Luxe Magazine - "Relaxation Mode"</h3>
 								<p>Elegant neutral traditional interiors with rich wide plank red oak floors</p>
 							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
+							<article class="6u 12u$(xsmall) work-item">
 								<a target="_blank" href="docs/publications/2011-07-01 Phinney Ridge (NW Home).pdf" class="image fit thumb"><img src="images/featured_articles/cottage_cute.jpg" alt="" /></a>
 								<h3>Northwest Home - "Cottage Cute, A Phinney Ridge Dream House"</h3>
 								<p>Walnut floors add new beauty to a cozy cottage in Seattle's Phinney Ridge</p>
@@ -115,12 +182,93 @@
 								<h3>Luxe Magazine - "Glowing Adaptation"</h3>
 								<p>Modern Seattle Home with pale-toned oak flooring</p>
 							</article>
+
 						</div>
 						<ul class="actions">
-							<!-- TASK: NEED TO FIND A WAY TO ONLY SHOW 4 FEATURES AND HIDE THE REST UNTIL USER CLICKS BUTTON -->
-							<li><a href="#" class="button">View More</a></li>
+							<!--TASK: Figure out how to change the title after it's clicked -->
+							<li><a class="button" id="flip">View More</a></li>
+							
 						</ul>
 					</section>
+
+				<section>
+							<!--
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row 50% uniform">
+									<div class="12u$"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							-->
+
+							<header class="major">
+								<a name="services"></a>
+								<h2>Services</h2>
+							</header>
+
+
+							<h4 style="margin-top:2em">Installation</h4>
+							<span class="image right"><img src="images/services-install.jpg" alt="" /></span>
+							<p>We provide and install a wide range of wood flooring products including: </p>
+							<ul style="margin-left:2em; margin-top:-20px">
+								<li>Traditional Oak flooring</li>
+								<li>Exotic species (Walnut, Brazilian Cherry, Cumaru, Bamboo, etc)</li>
+								<li>Wide Plank Flooring</li>
+								<li>Inlays and Borders</li>
+								<li>Stairs</li>
+								<li>Engineered wood floors</li>
+								<li>Floating floor systems</li>
+								<li>Reclaimed, Rustic and Character Grade floors</li>
+								<li>Cork flooring</li>
+								<li>Parquet and Patterned floors</li>
+								<li>Flushmount custom matched heat vent covers</li>
+							</ul>
+
+
+							<h4>Sanding and Finishing</h4>
+							<span class="image right"><img src="images/services-sandfinish.jpg" alt="" /></span>
+							<p>Whether you are having new floors sanded and finished or existing wood flooring refinished, our expert craftsman have the training and experience to ensure a beautiful, long lasting floor. We use a National Wood Flooring approved 8-step sanding process that includes five different sandings and complete filling of the floor. We use the highest quality finishes available. Our customers may choose from:</p>				    
+					        <ul style="margin-left:2em; margin-top:-20px">
+						        <li>Traditional Swedish Finsih</li>
+						        <li>High quality water based finish</li>
+						        <li>Hard wax and oil finishes</li>
+						        <li>Low and no VOC finishes</li>
+                            </ul>
+
+                            <h4>Maintenance and Repair</h4>
+							<span class="image right"><img src="images/services-maintrepair.jpg" alt="" /></span>
+							<p>Maintenance is the key to preserving the beauty of your floor.  Vacuuming or sweeping as needed, cleaning with recommended products and using felt pads on furniture feet all help to extend the life of your floor. In addition it is optimal for your flooring to keep your home's temperature between 68 and 78 degrees and the humidity between 30% to 50%.</p>
+                            <p>As your floor begins to show wear, an additional coat of finish can be applied without having to resand your floors. This is usually a one day process that is virtually dust free.  Adding a coat of finish restores sheen, hides surface scratches and delays the need for refinishing. We usually recommend recoating your floor every 3 to 5 years.</p>
+                            <p>We can repair and replace damaged flooring and patch areas if necessary when you are remodeling. We will work with you to match your existing species, grade and style of flooring to ensure the most seamless look possible.</p>
+
+                            <h4>Custom Staining</h4>
+							<span class="image right"><img src="images/services-stain.jpg" alt="" /></span>
+							<p>When your floor is refinished you may wish to change the natural color of your flooring to enhance the wood grain, match your furniture, or just to provide a new more current look. You may choose from:</p>
+					        <ul style="margin-left:2em; margin-top:-20px">
+						        <li>A custom color mixed specifically for your floor</li>
+						        <li>Our own custom color collection, preselected for us by Northwest Interior Designers</li>
+						        <li>Special color enhancing techniques such as aniline dying and bleaching</li>
+                            </ul>
+
+                            <h4>Eco-friendly Products</h4>
+							<span class="image right"><img src="images/services-eco.jpg" alt="" /></span>
+							<p>Wood flooring is the most abundantly available renewable flooring material. Sustainable forest management makes it possible to harvest wood without any serious impact on the environment, because trees are a renewable resource that can be replaced time and time again. Wood is a carbon neutral product that produces oxygen during its growth cycle and stores carbon during its service life. Wood floors last hundreds of years, so it won't need to be replaced as often as other flooring products.</p>
+                            <p>We install FSC certified wood, salvaged and reclaimed wood, bamboo and cork flooring. We have several options for environmentally friendly finish including low VOC, no VOC and hard wax oil finishes.</p>
+
+
+						</section>
+
+
 
 				<!-- Three -->
 					<section id="three">
@@ -137,7 +285,7 @@
 										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
                                                                 <ul class="actions">
-									<li style="padding-top:1em; margin-left:-1.2em"><input type="submit" value="Send Message" /></li>
+									<li style="padding-top:1em; margin-left:-0.5em"><input type="submit" value="Send Message" /></li>
 								</ul>
 								</form>
 								
@@ -166,7 +314,9 @@
 						</div>
 					</section>
 
-				
+					
+
+					<!--
 					<section id="four">
 						<h2>Elements</h2>
 
@@ -460,27 +610,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</form>
 						</section>
 
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row 50% uniform">
-									<div class="12u$"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+
+
 						</section>
+						-->
+
+
+						
 
 					</section>
 				
@@ -512,6 +648,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<!-- IMAGE GALLERY FROM http://www.menucool.com/responsive-slider -->
+			<script src="assets/js/ninja-slider.js"></script>
+			
+			
 
 	</body>
 </html>

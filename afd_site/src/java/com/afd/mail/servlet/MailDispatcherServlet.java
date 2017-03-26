@@ -42,7 +42,7 @@ public class MailDispatcherServlet extends HttpServlet {
         //Below are properties that should be stored in an external file or server properties
         //Hard-coding here because we don't need high-level security
         
-        String toEmail = "ryan.rush@gmail.com"; //NEED TO CHANGE THIS BEFORE OFFICIALLY DEPLOYING THIS NEW SITE
+        String toEmail = "ryan.rush@gmail.com"; //TASK: NEED TO CHANGE THIS BEFORE OFFICIALLY DEPLOYING THIS NEW SITE
         String username = "mail@advancedfloor.net";
         String password = "newpass1#";
         
