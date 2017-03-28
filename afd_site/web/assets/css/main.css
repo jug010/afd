@@ -2899,15 +2899,18 @@
 
 /* Taken from https://www.w3schools.com/howto/howto_js_topnav.asp */
 
-	#navigation {
+	#navigation  {
 		float: right;
 		width: 65%;
-		position: fixed;
 		z-index: 100;
 		top: 0;
 		right: 0;
 		box-shadow: 0 2px 3px rgba(0,0,0,.4);
 		
+	}
+
+	.sticky-nav-off {
+		position:fixed;
 	}
 			
 	ul.topnav {
@@ -3022,10 +3025,13 @@
 		#navigation {
 			float: right;
 			width: 70%;
-			position: fixed right;
 			z-index: 100;
 			top:0;
 			box-shadow: 0 2px 3px rgba(0,0,0,.4);
+		}
+
+		.sticky-nav-off {
+			position: fixed right;
 		}
 			
 		/* Header */
@@ -3073,6 +3079,10 @@
 			#navigation {
 				float: left;
 				width: 100%;
+				
+			}
+
+			.sticky-nav-off {
 				position: relative;
 			}
 			
@@ -3313,6 +3323,55 @@
 
 	@media screen and (max-width: 480px) {
 
+		/* Header */
+
+		body.is-touch #header {
+			/*background-position is coming from parallax javascript code*/
+			background-repeat: no-repeat;
+			
+			padding: 0em 0; /*using padding because height for some reason doesn't work in xsmall, I think it inherrits from small*/
+			background-size: 100%;
+			width: 100%;
+			position: fixed;
+			display: block;
+			height: 240px
+		}
+
+		#header h1 br {
+			display: none;
+		}
+
+
+		/* Navigation */
+
+		#header{
+			height: 240px;
+			padding-top:0em;
+			padding-bottom:0em;
+		}
+
+		.sticky-nav-off {
+			z-index:150;
+		}
+
+		.sticky-nav-off,
+		#main {
+			position: relative;
+		}
+
+		#main {
+			background: #fff;
+			padding-top:5em;
+			margin-top:240px
+		}
+		
+		.sticky-nav-on {
+		  position: fixed;
+		  width: 100%;
+		  top: 0;
+		}
+
+
 		/* List */
 
 			ul.actions {
@@ -3356,22 +3415,7 @@
 			}
 
 
-		/* Header */
 
-			#header {
-				/*background-position is coming from parallax javascript code*/
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-				padding: 6em 0; /*using padding because height for some reason doesn't work in xsmall, I think it inherrits from small*/
-				background-size: 100%;
-				width: 100%;
-				position: relative;
-				display: block;
-			}
-
-				#header h1 br {
-					display: none;
-				}
 
 		/* Footer */
 

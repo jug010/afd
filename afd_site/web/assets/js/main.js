@@ -13,6 +13,22 @@ function navFunction() {
     }
 }
 
+/*Stick Navigation*/
+/* from http://blog.teamtreehouse.com/create-sticky-navigation */
+
+var  mn = $(".sticky-nav-off");
+    mns = "sticky-nav-on";
+    hdr = $('#header').height();
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > hdr ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});
+
+
 
 
 /*Parallax functionality*/

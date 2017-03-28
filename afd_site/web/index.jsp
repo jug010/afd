@@ -39,15 +39,15 @@
 		<!-- Navigation -->
 		
 		<!-- Need to use https://codepen.io/Guilh/pen/JLKbn for the tablet view!!! -->
-			<nav id="navigation">
+			<nav id="navigation" class="sticky-nav-off">
 				<a name="top"></a>
 					<ul class="topnav" id="myTopnav">
-					  <li><a class="active" href="#top">Home</a></li>
-					  <li><a href="#gallery">Gallery</a></li>
-					  <li><a href="#about">About</a></li>
-					  <li><a href="#featuredwork">Featured Work</a></li>
-					  <li><a href="#services">Services</a></li>
-					  <li><a href="#contact">Contact</a></li>
+					  <li><a class="active" href="#top" onclick="navFunction()">Home</a></li>
+					  <li><a href="#gallery" onclick="navFunction()">Gallery</a></li>
+					  <li><a href="#about" onclick="navFunction()">About</a></li>
+					  <li><a href="#featuredwork" onclick="navFunction()">Featured Work</a></li>
+					  <li><a href="#services" onclick="navFunction()">Services</a></li>
+					  <li><a href="#contact" onclick="navFunction()">Contact</a></li>
 					  
                                           <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="navFunction()">☰</a>
 					  </li>
@@ -70,6 +70,7 @@
 						<p>Since 1983, we have been providing our customers with the beauty of real wood floors, expertly installed and finished. Advanced Floor Design has built its reputation by consistently delivering the very best in quality and craftsmanship on every project. Browse our gallery to view some of our past projects and explore our website to learn more about wood flooring.</p>
 
 						<p>Advanced Floor Design is licensed, bonded and insured. Our craftsmen are employees (not subcontractors) personally trained to insure the same quality workmanship on all jobs.</p>
+
 						<ul class="actions">
 							<li><a href="#contact" class="button">Get a Free Quote</a></li>
 						</ul>
