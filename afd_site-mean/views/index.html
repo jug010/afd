@@ -280,7 +280,7 @@
 							        message=$("#message").val();
 							        $("#message_sent").text("Sending E-mail...Please wait");
 									
-							        $.get("http://localhost:3000/send",{to:to,name:name,email:email,phone:phone,message:message},function(data){
+							        $.get("/send",{to:to,name:name,email:email,phone:phone,message:message},function(data){
 										if(data=="sent"){
 											$("#message_sent").empty().html("Email is been sent at "+to+" . Please check inbox!");
 							        }
