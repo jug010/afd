@@ -5,18 +5,26 @@ var express = require('express');
 var nodemailer = require("nodemailer");
 var http = require('http');
 
+const env = require('env2')('config.env');
+
+console.log(process.env.USER);
+console.log(process.env.NODEMAILER_PASS);
 
 // Defining SMTP mail server details to use my gmail to send the email
-/*
+
 var smtpTransport = nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
+    host: "smtp.advancedfloor.net",
+    port: "587",
+    ignoreTLS: true,
+    /* tls: {
+        rejectUnauthorized:false
+    }, */
     auth: {
-        user: "ryan.rush@gmail.com",
-        pass: "L!NNEAFA!th"
+        user: process.env.NODEMAILER_USER, //TASK: NEED TO CHANGE THIS BEFORE OFFICIALLY DEPLOYING THIS NEW SITE
+        pass: process.env.NODEMAILER_PASS
     }
 });
-*/
+
 
 // Version 2 from http://stackoverflow.com/questions/24973965/sending-emails-using-nodemailer
 /*
@@ -32,18 +40,17 @@ var smtpTransport = nodemailer.createTransport(smtpTransport({
 var app = express();
 
 // Ensure index.html is served when users hit the domain
-app.get('/',function(req,res){
-    res.sendfile('views/index.html');
-});
+app.get('/',function(req, res){ //get,put,post,delete   
+      res.sendFile(__dirname + '/views/index.html');
+    });
 
 // Handles route request for /send, which is triggered by the email form
 app.get('/send',function(req,res){
 	var mailOptions={
-	   to : req.query.to,
-	   name : req.query.name,
-	   email : req.query.email,
-	   phone : req.query.phone,
-	   message : req.query.message
+		from: req.query.email + req.query.name,
+		to: req.query.to,
+		subject: "Inquiry from website",
+		html: req.query.name + "<br />" + req.query.email + "<br />" + req.query.phone + "<br />" + req.query.message
 	}
 
 	console.log(mailOptions);

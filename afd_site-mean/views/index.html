@@ -273,13 +273,13 @@
 							$(document).ready(function(){
 							    var from,to,subject,text;
 							    $("#send_email").click(function(){   
-							    	to="ryan.rush@gmail.com"
+							    	to="ryan.rush@gmail.com" //TASK: NEED TO CHANGE THIS BEFORE PROD PUSH
 							        name=$("#name").val();
 							        email=$("#email").val();
 							        phone=$("#phone").val();
 							        message=$("#message").val();
 							        $("#message_sent").text("Sending E-mail...Please wait");
-									console.log(name);
+									
 							        $.get("http://localhost:3000/send",{to:to,name:name,email:email,phone:phone,message:message},function(data){
 										if(data=="sent"){
 											$("#message_sent").empty().html("Email is been sent at "+to+" . Please check inbox!");
