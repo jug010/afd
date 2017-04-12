@@ -1,4 +1,5 @@
 ******* What I built: *********
+
 I challenged myself to learn several new technologies so I could craft together a new responsive website for Advanced Floor Design (AFD). Years of Google Analytics data told me that more and more users were accessing advancedfloor.net using mobile devices, so I needed to ensure they had a positive experience.
 
 First thing first, I found a fantastic free responsive template from HTML5 UP which had a great look and feel, slick JQuery functionality, and all necessary CSS & media query framework built in. I started with this template and then made several modifications/additions so it would work for AFD.
